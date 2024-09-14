@@ -1,0 +1,601 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'open sans';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+section[id] {
+    scroll-margin-top: 70px ;
+}
+
+/*titulo eco smile*/
+#titulo-unico {
+    font-family: "Kalam", cursive; /* Cambia la fuente */
+    font-size: 70px;
+    color: #ffffff;
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo {
+    color: #2a7342;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;    
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 600px;
+    background: #AE86F3;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../img/bambu.jpeg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(123, 39%, 59%, 0.46), hsla(180deg 45% 52% / 66%)), url(../img/bambu.jpeg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+
+/*barra de navegacion inicio*/
+nav {
+    position: fixed;  /* Hace que la barra se quede fija en la parte superior */
+    top: 0;           /* Asegura que esté en la parte superior de la página */
+    width: 100%;      /* Abarca todo el ancho de la pantalla */
+    background-color: rgba(122, 167, 81, 0.247); /* Fondo blanco con transparencia */
+    padding: 30px 50px 0 0;  /* Espaciado para el contenido dentro de la barra */
+    z-index: 1000;    /* Asegura que la barra esté por encima del resto del contenido */
+    transition: background-color 0.3s;  /* Efecto de transición suave en el fondo */
+    text-align: right;
+}
+
+nav a {
+    color: rgb(255, 0, 0);    /* Color del texto de los enlaces */
+    font-weight: bold;
+    margin-right: 15px;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav a:hover {
+    color: rgb(78, 87, 172); /* Color al pasar el mouse sobre los enlaces */
+}
+
+/*barra de navegacion fin*/
+
+
+/*blog-inicio*/
+/* Blog - Ajustes de tipografía y espaciado */
+#blog .contenido-textos {
+    font-family: 'Times New Roman', Times, serif; /* Mejora la legibilidad con una tipografía sencilla */
+    color: #333; /* Color de texto más oscuro para mejor contraste */
+    line-height: 1.6; /* Espaciado entre líneas más amplio para una lectura fácil */
+    padding: 20px; /* Espaciado interno general */
+}
+
+/* Encabezados */
+#blog h2.titulo, #blog h2.titulo-final, 
+#blog h3.titulo-final, #blog h4.titulo-final, #blog h5.titulo-final {
+    color: #1d974c; /* Color de encabezados más destacado */
+    font-weight: bold; /* Mayor peso en los títulos */
+    margin-bottom: 15px; /* Espaciado inferior */
+}
+
+/* Párrafos */
+#blog p {
+    margin-bottom: 20px; /* Espaciado entre párrafos */
+    font-size: 16px; /* Tamaño de fuente adecuado para leer */
+    text-align: justify; /* Texto justificado para alineación más ordenada */
+}
+
+/* Listas */
+#blog ul {
+    padding-left: 20px; /* Indentación para listas */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Elementos de lista */
+#blog ul li {
+    margin-bottom: 10px; /* Espaciado entre elementos de la lista */
+}
+
+/* Negritas */
+#blog strong {
+    font-weight: bold; /* Refuerza los elementos destacados en las listas */
+    color: #007a1e; /* Color para destacar palabras importantes */
+}
+
+/* Imágenes dentro del blog */
+.imagen-info {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;   /* Centrar las imágenes */
+    max-height: 400px;   /* Limitar la altura máxima */
+    object-fit: cover;   /* Hacer que la imagen se ajuste sin distorsionar */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+/* Fin del blog */
+
+
+
+/*menu navegacion*/
+nav > a{
+    color:#fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+    text-decoration: solid;
+}
+
+
+/*titullo y slogan*/
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color:#fff;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color:#fff;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/*producto y carrucel inicio*/
+/* Ajustes generales para el contenedor */
+.contenedor {
+    padding: 40px 0;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Estilos para el texto del producto */
+.titulo-final {
+    color: #2a7342;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.descripcion-producto {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    text-align: justify;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* Ajustes para el carrusel */
+.container-carrusel {
+    max-width: 500px; /* Limitar el ancho máximo del carrusel */
+    margin: 30px auto;
+}
+
+.carousel-inner img {
+    max-height: 300px; /* Limitar la altura de las imágenes del carrusel */
+    object-fit: contain;
+}
+
+.carousel-control {
+    background: rgba(0, 0, 0, 0.5); /* Hacer los controles semitransparentes */
+}
+
+/* Estilo general para títulos */
+.titulo {
+    font-size: 32px;
+    color: #2a7342;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Mejorar la apariencia en dispositivos pequeños */
+@media (max-width: 768px) {
+    .descripcion-producto {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .container-carrusel {
+        max-width: 100%; /* Ajustar el tamaño del carrusel en pantallas pequeñas */
+    }
+}
+/*producto y carrucel fin*/
+
+
+/* Quienes somos */
+
+main .sobre-nosotros{
+    padding: 30px 0 60px 0;
+}
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-about-us{
+    max-width: 50%;
+    height: auto; /* Mantener la proporción original */
+    object-fit: contain; /* Asegura que la imagen no se deforme */
+    flex-basis: 40%; /* Ocupará el 40% del ancho del contenedor */
+}
+
+.sobre-nosotros .contenido-textos{
+    width: 50%;
+}
+
+.contenido-textos h3{
+    margin-bottom: 15px;
+}
+
+.contenido-textos h3 span{
+    background: #06860c;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+
+/* footer */
+
+footer{
+    background: #a1f8b4;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+footer p {
+    margin: 0;
+    color: rgb(128, 124, 124);
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 30px; /* Tamaño de los logos de redes sociales */
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2); /* Efecto de zoom al pasar el ratón */
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+
+@media screen and (max-width:900px){
+    header{
+        background-position: center;
+    }
+
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-nosotros .contenido-textos{
+        width: 90%;
+    }
+
+    .imagen-about-us{
+        width: 90%;
+    }
+
+    /* Galeria */
+
+    .imagen-port{
+        width: 44%;
+    }
+
+    /* Clientes */
+
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards .card{
+        width: 90%;
+    }
+
+    .cards .card:first-child{
+        margin-bottom: 30px;
+    }
+
+    /* servicios */
+
+    .servicio-cont{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .servicio-ind{
+        width: 100%;
+        text-align: center;
+    }
+
+    .servicio-ind:nth-child(1), .servicio-ind:nth-child(2){
+        margin-bottom: 60px;
+    }
+
+    .servicio-ind img{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:500px){
+    nav{
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+
+    nav > a{
+        margin-right: 5px;
+    }
+
+    .textos-header h1{
+        font-size: 35px;
+    }
+
+    .textos-header h2{
+        font-size: 20px;
+    }
+
+    /* ABOUT US */
+
+    /* Contenedor principal de la sección "sobre nosotros" */
+.contenedor-sobre-nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px; /* Espacio entre imagen y texto */
+    margin-top: 40px;
+}
+
+/* Ajustes para la imagen */
+.imagen-about-us {
+    max-width: 100%;
+    height: auto; /* Mantener la proporción original */
+    object-fit: contain; /* Asegura que la imagen no se deforme */
+    flex-basis: 40%; /* Ocupará el 40% del ancho del contenedor */
+}
+
+/* Contenido del texto al lado de la imagen */
+.contenido-textos {
+    flex-basis: 55%; /* Ocupará el 55% del ancho del contenedor */
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Títulos */
+.titulo {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #2a7342;
+}
+
+h3 {
+    font-size: 20px;
+    color: #2a7342;
+    margin: 15px 0;
+}
+
+/* Mejorar la visualización en pantallas más pequeñas */
+@media (max-width: 768px) {
+    .contenedor-sobre-nosotros {
+        flex-direction: column; /* En pantallas pequeñas, los elementos se apilan verticalmente */
+        text-align: center;
+    }
+
+    .imagen-about-us {
+        width: 80%; /* Imagen ocupa el 80% del ancho en pantallas pequeñas */
+        margin: 0 auto; /* Centramos la imagen */
+    }
+
+    .contenido-textos {
+        width: 100%; /* Texto ocupará el 100% del ancho */
+    }
+}
+
+
+    /* Galeria */
+
+    .imagen-port{
+        width: 95%;
+    }
+
+    /* Clients */
+
+    .cards .card{
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards .card img{
+        width: 90px;
+        height: 90px;
+    }
+
+    /* Footer */
+
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+    }
+
+    .content-foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .content-foo h4{
+        border: none;
+    }
+
+    .content-foo p{
+        color: #ccc;
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 20px;
+    }
+
+    .titulo-final{
+        font-size: 20px;
+    }
+}
+
+/*valores corporativos*/
+/* Estilos para los títulos */
+h2 {
+    font-family: 'Georgia', serif; /* Fuente elegante para los títulos */
+    color: #2e7d32; /* Verde oscuro */
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.2em;
+}
+
+/* Estilo para los elementos de la galería */
+.row {
+    display: flex;
+    justify-content: center; /* Centrar elementos horizontalmente */
+    gap: 20px; /* Espacio entre elementos */
+}
+
+.col-md-3 {
+    background: white;
+    padding: 10px;
+    border-radius: 8px; /* Bordes redondeados para cada imagen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s; /* Animación suave al hacer hover */
+}
+
+/* Efecto hover para las imágenes */
+.col-md-3:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño en hover */
+}
+
+/* Estilo para las imágenes */
+.col-md-3 img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Estilo para los títulos debajo de las imágenes */
+.caption h1 {
+    font-family: 'Georgia', serif; /* Fuente elegante */
+    font-size: 1.5em;
+    color: #2e7d32; /* Verde oscuro */
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+/* Estilo para el botón de WhatsApp */
+.whatsapp-button {
+    position: fixed; /* Mantiene el botón fijo en la pantalla */
+    bottom: 20px; /* Distancia desde la parte inferior */
+    right: 20px; /* Distancia desde el lado derecho */
+    z-index: 1000; /* Asegura que esté siempre encima de otros elementos */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25d366; /* Color de fondo del botón */
+    border-radius: 50%; /* Hace que el botón sea redondo */
+    width: 60px; /* Ancho del botón */
+    height: 60px; /* Altura del botón */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para el botón */
+    transition: transform 0.3s; /* Transición suave para efectos de hover */
+}
+
+.whatsapp-button img {
+    width: 50px; /* Tamaño del ícono de WhatsApp */
+    height: 50px;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el cursor */
+}
